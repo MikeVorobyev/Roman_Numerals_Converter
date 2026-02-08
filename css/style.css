@@ -25,6 +25,14 @@ body {
     font-family: 'Nunito';
     background-color: var(--bg_black);
     -webkit-tap-highlight-color: transparent;
+
+    @media(max-width: 768px) {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .container {
@@ -46,10 +54,13 @@ body {
         font-size: 30px;
     }
 
+    @media(max-width: 768px) {
+        margin-top: 0px;
+    }
+
     @media(max-width: 480px) {
         font-size: 24px;
-        margin: 0 20px;
-        margin-top: 20vh;
+        margin-top: 0vh;
         text-align: center;
     }
 }
