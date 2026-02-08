@@ -52,6 +52,7 @@ body {
 
     @media(max-width: 768px) {
         font-size: 30px;
+        margin-bottom: 20px;
     }
 
     @media(max-width: 768px) {
@@ -625,6 +626,7 @@ i.ic_arrow_right {
 
     @media(max-width: 768px) {
         margin: 0 40px;
+        margin-top: 20px;
         font-size: 16px;
         text-align: center;
     }
