@@ -25,13 +25,18 @@ body {
     font-family: 'Nunito';
     background-color: var(--bg_black);
     -webkit-tap-highlight-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-    @media(max-width: 768px) {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+@media(max-width: 768px) {
+    body {
+        padding: 15px;
     }
 }
 
@@ -39,30 +44,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    width: 100%;
+    flex: 1; /* Заставляет контейнер растягиваться, занимая доступное пространство */
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
 .title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
     color: #fb9900;
     font-size: 50px;
+    margin: 0 0 40px 0;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
 
-    @media(max-width: 768px) {
-        font-size: 30px;
-        margin-bottom: 20px;
+@media(max-width: 768px) {
+    .title {
+        font-size: 32px;
+        margin-bottom: 30px;
+        padding: 15px;
     }
+}
 
-    @media(max-width: 768px) {
-        margin-top: 0px;
-    }
-
-    @media(max-width: 480px) {
+@media(max-width: 480px) {
+    .title {
         font-size: 24px;
-        margin-top: 0vh;
-        text-align: center;
+        margin-bottom: 25px;
+        padding: 10px;
     }
 }
 
@@ -623,16 +636,25 @@ i.ic_arrow_right {
     font-size: 20px;
     transition: .3s;
     cursor: pointer;
+    margin-top: auto; /* Важно: прижимает блок к низу, если контента мало */
+    padding: 20px 0;
+    box-sizing: border-box;
+    width: 100%;
+}
 
-    @media(max-width: 768px) {
-        margin: 0 40px;
-        margin-top: 20px;
+@media(max-width: 768px) {
+    .titleBottom {
+        margin: 20px 0 0 0;
+        padding: 15px;
         font-size: 16px;
         text-align: center;
     }
+}
 
-    @media(max-width: 768px) {
-        font-size: 12px;
+@media(max-width: 480px) {
+    .titleBottom {
+        font-size: 14px;
+        padding: 10px;
     }
 }
 
